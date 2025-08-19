@@ -13,6 +13,7 @@ body {
     font-family: 'Oswald', sans-serif;
     background: linear-gradient(to bottom, #fdfdfd, #f8f9fa, #ececec);
     color: #000;
+    overflow: hidden;
 }
 
 .container {
@@ -849,18 +850,20 @@ hr {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffffff;
-    z-index: 9999;
+    width: 100%;
+    height: 100dvh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background: #fff;
+    z-index: 9999;
 }
 
 .preloader-logo {
-    width: 100px;
-    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
     animation: zoomFade 1.5s ease-in-out infinite;
     opacity: 0.8;
 }
